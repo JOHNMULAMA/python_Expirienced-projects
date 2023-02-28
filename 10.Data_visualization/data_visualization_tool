@@ -1,0 +1,17 @@
+import matplotlib.pyplot as plt
+import numpy as np
+
+# Generate some random data
+x = np.arange(0, 10, 0.1)
+y = np.sin(x)
+
+# Create a plot
+plt.plot(x, y)
+
+# Set plot title and labels for x and y axes
+plt.title('Sine Wave')
+plt.xlabel('x')
+plt.ylabel('y')
+
+# Show the plot
+plt.show()
