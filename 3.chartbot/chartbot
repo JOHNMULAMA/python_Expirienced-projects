@@ -1,0 +1,18 @@
+import matplotlib.pyplot as plt
+
+def generate_chart():
+    # Define data for the chart
+    labels = ['Apples', 'Bananas', 'Oranges']
+    values = [20, 35, 25]
+
+    # Generate a pie chart
+    plt.pie(values, labels=labels, autopct='%1.1f%%')
+
+    # Set the title of the chart
+    plt.title('Fruit distribution')
+
+    # Save the chart to a file
+    plt.savefig('fruit_chart.png')
+
+if __name__ == '__main__':
+    generate_chart()
